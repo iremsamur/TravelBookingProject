@@ -1,3 +1,7 @@
+using BusinessLayer.Abstract;
+using BusinessLayer.Concrete;
+using DataAccesLayer.Abstract;
+using DataAccesLayer.EntityFramework;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -24,6 +28,11 @@ namespace TravelBooking
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            //dependency injection kullandýðýmýzda tüm soyut-somut sýnýf tanýmlamalarýný bu þekilde ilgili katmandaki karþýlýklarý ile yapmalýyýz.
+            services.AddScoped<IDestinationService, DestinationManager>();
+            services.AddScoped<IDestinationDal, EfDestinationDal>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

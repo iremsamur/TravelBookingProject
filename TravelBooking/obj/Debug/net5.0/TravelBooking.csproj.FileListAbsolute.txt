@@ -155,3 +155,9 @@ C:\Users\User\Desktop\C# Projects\TravelBooking\TravelBooking\bin\Debug\net5.0\r
 C:\Users\User\Desktop\C# Projects\TravelBooking\TravelBooking\obj\Debug\net5.0\TravelBooking.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\User\Desktop\C# Projects\TravelBooking\TravelBooking\obj\Debug\net5.0\Razor\Views\Shared\_UILayout.cshtml.g.cs
 C:\Users\User\Desktop\C# Projects\TravelBooking\TravelBooking\obj\Debug\net5.0\Razor\Views\Default\Index.cshtml.g.cs
+C:\Users\User\Desktop\C# Projects\TravelBooking\TravelBooking\obj\Debug\net5.0\Razor\Views\LayoutPartial\_HeaderPartial.cshtml.g.cs
+C:\Users\User\Desktop\C# Projects\TravelBooking\TravelBooking\obj\Debug\net5.0\Razor\Views\LayoutPartial\_NavbarPartial.cshtml.g.cs
+C:\Users\User\Desktop\C# Projects\TravelBooking\TravelBooking\obj\Debug\net5.0\Razor\Views\LayoutPartial\_FooterPartial.cshtml.g.cs
+C:\Users\User\Desktop\C# Projects\TravelBooking\TravelBooking\obj\Debug\net5.0\Razor\Views\LayoutPartial\_ScriptPartial.cshtml.g.cs
+C:\Users\User\Desktop\C# Projects\TravelBooking\TravelBooking\obj\Debug\net5.0\Razor\Views\Shared\Components\_SliderPartial\Default.cshtml.g.cs
+C:\Users\User\Desktop\C# Projects\TravelBooking\TravelBooking\obj\Debug\net5.0\Razor\Views\Shared\Components\_PopularDestinationsPartial\Default.cshtml.g.cs
