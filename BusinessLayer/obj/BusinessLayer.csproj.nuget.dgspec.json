@@ -51,6 +51,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.2.2, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.17, )"

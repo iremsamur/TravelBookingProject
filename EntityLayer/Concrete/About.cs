@@ -20,5 +20,7 @@ namespace EntityLayer.Concrete
         public string Description2 { get; set; }
         public bool  Status { get; set; }
 
+        
+
     }
 }
