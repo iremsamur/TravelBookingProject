@@ -115,6 +115,9 @@ namespace DataAccesLayer.Migrations
                     b.Property<string>("City")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("CurrencyType")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("DayNight")
                         .HasColumnType("nvarchar(max)");
 
@@ -137,24 +140,24 @@ namespace DataAccesLayer.Migrations
 
             modelBuilder.Entity("EntityLayer.Concrete.Feature", b =>
                 {
-                    b.Property<int>("FeatureID")
+                    b.Property<int>("SubFeatureID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Post1Description")
+                    b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Post1Image")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Post1Name")
+                    b.Property<string>("Image")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("Status")
                         .HasColumnType("bit");
 
-                    b.HasKey("FeatureID");
+                    b.Property<string>("Title")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("SubFeatureID");
 
                     b.ToTable("Features");
                 });
@@ -227,24 +230,24 @@ namespace DataAccesLayer.Migrations
 
             modelBuilder.Entity("EntityLayer.Concrete.SubFeature", b =>
                 {
-                    b.Property<int>("SubFeatureID")
+                    b.Property<int>("FeatureID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Description")
+                    b.Property<string>("Post1Description")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Image")
+                    b.Property<string>("Post1Image")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Post1Name")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("Status")
                         .HasColumnType("bit");
 
-                    b.Property<string>("Title")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("SubFeatureID");
+                    b.HasKey("FeatureID");
 
                     b.ToTable("SubFeatures");
                 });

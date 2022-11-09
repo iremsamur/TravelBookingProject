@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DataAccesLayer.EntityFramework
 {
-    public class EfSubFeatureDal : GenericRepository<SubFeature>, ISubFeatureDal
+    public class EfSubFeatureDal : GenericRepository<Feature>, ISubFeatureDal
     {
     }
 }

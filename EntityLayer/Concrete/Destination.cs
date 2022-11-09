@@ -18,6 +18,9 @@ namespace EntityLayer.Concrete
         public string Image { get; set; }
         public string Description { get; set; }
         public int Capacity { get; set; }
+        public string CurrencyType { get; set; }
         public bool Status { get; set; }
+
+        //Ders 17'de kaldım
     }
 }

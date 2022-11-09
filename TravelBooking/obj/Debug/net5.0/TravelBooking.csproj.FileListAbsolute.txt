@@ -161,3 +161,8 @@ C:\Users\User\Desktop\C# Projects\TravelBooking\TravelBooking\obj\Debug\net5.0\R
 C:\Users\User\Desktop\C# Projects\TravelBooking\TravelBooking\obj\Debug\net5.0\Razor\Views\LayoutPartial\_ScriptPartial.cshtml.g.cs
 C:\Users\User\Desktop\C# Projects\TravelBooking\TravelBooking\obj\Debug\net5.0\Razor\Views\Shared\Components\_SliderPartial\Default.cshtml.g.cs
 C:\Users\User\Desktop\C# Projects\TravelBooking\TravelBooking\obj\Debug\net5.0\Razor\Views\Shared\Components\_PopularDestinationsPartial\Default.cshtml.g.cs
+C:\Users\User\Desktop\C# Projects\TravelBooking\TravelBooking\obj\Debug\net5.0\Razor\Views\Shared\Components\_StatisticsPartial\Default.cshtml.g.cs
+C:\Users\User\Desktop\C# Projects\TravelBooking\TravelBooking\obj\Debug\net5.0\Razor\Views\Shared\Components\_FeaturePartial\Default.cshtml.g.cs
+C:\Users\User\Desktop\C# Projects\TravelBooking\TravelBooking\obj\Debug\net5.0\Razor\Views\Shared\Components\_SubAboutPartial\Default.cshtml.g.cs
+C:\Users\User\Desktop\C# Projects\TravelBooking\TravelBooking\obj\Debug\net5.0\Razor\Views\Shared\Components\_TestimonialPartial\Default.cshtml.g.cs
+C:\Users\User\Desktop\C# Projects\TravelBooking\TravelBooking\obj\Debug\net5.0\Razor\Views\Destination\Index.cshtml.g.cs
