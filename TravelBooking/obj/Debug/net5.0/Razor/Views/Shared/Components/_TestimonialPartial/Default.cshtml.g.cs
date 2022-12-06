@@ -27,14 +27,14 @@ using TravelBooking.Models;
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\User\Desktop\C# Projects\TravelBooking\TravelBooking\Views\_ViewImports.cshtml"
+#line 3 "C:\Users\User\Desktop\C# Projects\TravelBooking\TravelBooking\Views\_ViewImports.cshtml"
 using EntityLayer.Concrete;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"ca5b437b9359e3bae2de915cb94aa1213bfeb89e", @"/Views/Shared/Components/_TestimonialPartial/Default.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4af2987ac249f1986ab482b5451f90d4f04fc4c3", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"654a6c7060c435210a796ed3293c4609aa777946", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views_Shared_Components__TestimonialPartial_Default : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<List<Testimonial>>
     #nullable disable

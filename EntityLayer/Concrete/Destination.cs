@@ -20,7 +20,10 @@ namespace EntityLayer.Concrete
         public int Capacity { get; set; }
         public string CurrencyType { get; set; }
         public bool Status { get; set; }
+        public DestinationDetails DestinationDetails { get; set; }
+        public int DestinationDetailID { get; set; }
 
-        //Ders 17'de kaldım
+        //Destination Comment İlişki
+        public List<Comment> Comments { get; set; }
     }
 }
