@@ -150,8 +150,11 @@
 
 
           
-                @await Component.InvokeAsync("_CommentList")
-                @await Component.InvokeAsync("_AddComment")
+                @await Component.InvokeAsync("_CommentList",new{id=ViewBag.i})<!--
+                    DestinationDetails'den gelen viewbag ile taşıdığım destination id'sini
+                    view componente parametre olarak gönderiyorum
+                -->
+                @await Html.PartialAsync("~/Views/Comment/AddComment.cshtml")
 
 
             </div>

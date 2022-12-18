@@ -22,6 +22,7 @@ namespace TravelBooking.Controllers
         [HttpGet]
         public IActionResult DestinationDetails(int id)
         {
+            ViewBag.i = id;//Destinasyon id değerini view'e taşıyıp kullanabilmeyi sağlar
             var values = _destinationService.TGetDestinationDetails(id);
             return View(values);
 

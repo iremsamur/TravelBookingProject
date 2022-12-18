@@ -15,6 +15,10 @@ namespace BusinessLayer.Abstract
 
         T TGetByID(int id);
 
+        
+
+        
+
 
     }
 }

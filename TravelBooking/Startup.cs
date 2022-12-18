@@ -1,10 +1,14 @@
 using BusinessLayer.Abstract;
 using BusinessLayer.Concrete;
 using DataAccesLayer.Abstract;
+using DataAccesLayer.Concrete;
 using DataAccesLayer.EntityFramework;
+using EntityLayer.Concrete;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -27,7 +31,22 @@ namespace TravelBooking
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<Context>();
+            //identity yapýlandýrmasý
+            services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<Context>();
+
             services.AddControllersWithViews();
+
+            //proje seviyesinde yetkilendirme (authorization) için þunu ekliyoruz
+            services.AddMvc(config =>
+            {
+                var policy = new AuthorizationPolicyBuilder()
+                .RequireAuthenticatedUser()
+                .Build();
+                config.Filters.Add(new AuthorizeFilter(policy));
+            });//sisteme giriþ yapmadan allow anonymous dýþýndaki diðer sayfalara gidemez.
+            services.AddMvc();
+
 
             //dependency injection kullandýðýmýzda tüm soyut-somut sýnýf tanýmlamalarýný bu þekilde ilgili katmandaki karþýlýklarý ile yapmalýyýz.
             services.AddScoped<IDestinationService, DestinationManager>();
@@ -38,6 +57,8 @@ namespace TravelBooking
             services.AddScoped<ISubAboutDal, EfSubAboutDal>();
             services.AddScoped<ITestimonialService, TestimonialManager>();
             services.AddScoped<ITestimonialDal, EfTestimonialDal>();
+            services.AddScoped<ICommentService, CommentManager>();
+            services.AddScoped<ICommentDal, EfCommentDal>();
 
         }
 
@@ -56,6 +77,7 @@ namespace TravelBooking
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            app.UseAuthentication();//bunu eklememiz gerekiyor. Login için
 
             app.UseRouting();
 
