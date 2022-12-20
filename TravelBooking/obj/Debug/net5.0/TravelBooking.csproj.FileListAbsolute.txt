@@ -176,3 +176,7 @@ C:\Users\User\Desktop\C# Projects\TravelBooking\TravelBooking\bin\Debug\net5.0\M
 C:\Users\User\Desktop\C# Projects\TravelBooking\TravelBooking\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\User\Desktop\C# Projects\TravelBooking\TravelBooking\obj\Debug\net5.0\Razor\Views\Login\SignUp.cshtml.g.cs
 C:\Users\User\Desktop\C# Projects\TravelBooking\TravelBooking\obj\Debug\net5.0\Razor\Views\Login\SignIn.cshtml.g.cs
+C:\Users\User\Desktop\C# Projects\TravelBooking\TravelBooking\obj\Debug\net5.0\Razor\Views\Shared\_UserLayout.cshtml.g.cs
+C:\Users\User\Desktop\C# Projects\TravelBooking\TravelBooking\obj\Debug\net5.0\Razor\Areas\Member\Views\Comment\Index.cshtml.g.cs
+C:\Users\User\Desktop\C# Projects\TravelBooking\TravelBooking\obj\Debug\net5.0\Razor\Views\MemberLayoutPartial\_HeaderPartial.cshtml.g.cs
+C:\Users\User\Desktop\C# Projects\TravelBooking\TravelBooking\obj\Debug\net5.0\Razor\Views\MemberLayoutPartial\_NavbarPartial.cshtml.g.cs

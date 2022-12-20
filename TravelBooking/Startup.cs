@@ -16,6 +16,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TravelBooking.Models;
 
 namespace TravelBooking
 {
@@ -33,7 +34,8 @@ namespace TravelBooking
         {
             services.AddDbContext<Context>();
             //identity yapýlandýrmasý
-            services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<Context>();
+            services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<Context>().AddErrorDescriber<CustomIdentityValidator>().AddEntityFrameworkStores<Context>();
+            //özelleþtirilmiþ validasyon kullanýmý için bunu buraya ekliyoruz
 
             services.AddControllersWithViews();
 
@@ -88,6 +90,15 @@ namespace TravelBooking
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+            });
+
+            //area kullanýmý için scaffoldingreadme içindeki endpointi buraya veriyorum
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllerRoute(
+                  name: "areas",
+                  pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+                );
             });
         }
     }
